@@ -349,7 +349,7 @@ class QueryCollector extends PDOCollector
     }
 
     /**
-     * Removes extra spaces at the beginning and end of the SQL query and its lines.
+     * Format sql statements.
      *
      * @param string $sql
      * @return string
