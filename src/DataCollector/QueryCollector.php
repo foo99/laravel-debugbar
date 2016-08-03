@@ -356,7 +356,7 @@ class QueryCollector extends PDOCollector
      */
     protected function formatSql($sql)
     {
-        return trim(preg_replace("/\s*\n\s*/", "\n", $sql));
+        return \SqlFormatter::format($sql, false);
     }
 
     /**
